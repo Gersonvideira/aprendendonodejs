@@ -1,0 +1,33 @@
+{
+  "name": "blogapp",
+  "version": "1.0.0",
+  "description": "Dando os primeiros passos com Nodejs",
+  "main": "app.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "mongoose": "^5.12.10",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gersonvideira/aprendendonodejs.git"
+  },
+  "author": "Gerson Videira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gersonvideira/aprendendonodejs/issues"
+  },
+  "homepage": "https://github.com/Gersonvideira/aprendendonodejs#readme"
+}

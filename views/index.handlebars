@@ -1,0 +1,30 @@
+<div class="jumbotron">
+  <h1 class="display-4">Bem-vindo ao L27</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  {{#if user}}
+              {{else}}
+  <p class="lead">
+    <a class="btn btn-primary btn-sm" href="usuarios/registro" role="button">Inscreva-se</a>
+  </p>
+  {{/if}}
+</div>
+{{!-- <hr> --}}
+<h2 class="p-4">Postagem recentes: </h2>
+{{#each postagens}}
+<div class="card mt-2 ms-5">
+        <div class="card-body ">
+            <h3>{{titulo}}</h3>
+            <p>{{descricao}}</p>
+    <a class="btn btn-secondary btn-sm " href="/postagem/{{slug}}" role="button">ler mais...</a><br>
+            <small class="mt-4">{{categoria.nome}}</small><br>
+            <small>Data de publicação{{data}}</small>
+            {{!-- <hr> --}}
+        </div>
+</div>
+{{else}}
+<small>
+  <h6>Nenhuma postagem </h6>
+  </small>
+{{/each}}
